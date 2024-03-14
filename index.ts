@@ -16,9 +16,9 @@ const obj = {
 app.get("/", (req, res) => {
   res.status(200).json({ data: obj })
 })
-const PORT = process.env.PORT ?? 3000
+const PORT = process.env.PORT ?? 3003
 app.listen(PORT, () => {
-  console.log("listen 3001")
+  console.log("listen :", PORT)
 });
 
 
