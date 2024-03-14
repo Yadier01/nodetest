@@ -2,13 +2,18 @@
   "name": "nodetest",
   "module": "index.ts",
   "type": "module",
-"scripts": {
-    "start": "bun run index.ts"
+  "scripts": {
+    "start": "bun run --watch index.ts",
+    "build": "bun run index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.0.8"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "express": "^4.18.3"
   }
 }
